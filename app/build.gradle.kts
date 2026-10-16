@@ -12,17 +12,6 @@ android {
         versionCode = 1
         versionName = "1.0"
     }
-    signingConfigs {
-        getByName("debug") {
-            enableV1Signing = true
-            enableV2Signing = true
-        }
-    }
-    buildTypes {
-        getByName("debug") {
-            signingConfig = signingConfigs.getByName("debug")
-        }
-    }
     buildFeatures { compose = true }
     composeOptions { kotlinCompilerExtensionVersion = "1.5.14" }
     compileOptions {
